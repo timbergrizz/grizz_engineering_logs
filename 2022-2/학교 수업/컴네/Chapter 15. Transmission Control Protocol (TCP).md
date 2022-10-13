@@ -559,6 +559,7 @@
 		- 전송하는 패킷을 하나씩 증가시키는 기법을 additive increase라 한다.
 		- 전송하는 패킷을 두배씩 증가시키는을기법을 exponential increase라 한다.
 			- slow start라고 할 수 있다.
+				- 처음부터 윈도우 크기만큼 때려버리는것보다는 시작값이 작기 때문에 slow start이다.
 			- 이러한 기법이 없을때는 상대방이 받을 수 있을 만큼 그대로 때려버렸는데, 이러한 congestion increase는 서서히 늘려가기 때문에 slow start라 한다.
 			- 일반적으로 시스템에서 정의해둔 threshold만큼 exponential만큼 늘리고, 이후로는 additive increase로 처리한다.
 				- 시스템에서 미리 정의하여 동작하기도 한다.
@@ -707,4 +708,3 @@ $$ RTO = RTTs + 4* RTTd = \dfrac 7 8 RTTs + \dfrac 1 8 RTT + \dfrac 3 4 RTTd + \
 - 우리가 사용하는 ack은 cumulative ack이다.
 	- 데이터를 한번베 보내거 된다.
 	- 중간에 사라지는게 있는지 모른다.
-		- se
