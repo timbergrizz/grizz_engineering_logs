@@ -8,6 +8,7 @@
 	compgen -b # built-in
 ```
 	- 리눅스 커맨드는 alias, function, built-in, external 4가지로 구분될 수 있다.
+	
 ### Alias
 - 어떤 커맨드에 별칭을 부여하는 방법
 - 다음을 통해 커맨드에 등록된 alias를 확인하고, 등록하고, 제거할 수 있다.
@@ -19,6 +20,7 @@
 - 기존의 커맨드를 바탕으로 새로운 커맨드로 확장해서 사용할 수 있다.
 - single / double quote중 single이 더 strong하고, 이를 주로 사용하게 된다.
 	- alias할때는 single이 낫다.
+	
 ### Shell Function
 - 기능이 반복적으로 사용될 것 같을 때 함수로 만들게 된다.
 - command들을 그룹화 하여, 다른 사람들이 보기 좋도록 만드는 것이다.
@@ -29,6 +31,7 @@
 	- 이름만 커맨드처럼 사용하면 된다.
 	- multiline으로도 선언할 수 있다.
 		- 한 줄로 할땐 명령 끝에 ; 삽입하지만, 여러개의 라인에선 삽입하지 않아도 된다.
+		
 #### Positional Parameter
 - 함수에서 파라미터를 따로 선언할 필요 없이 파라미터를 순서대로 적어주면 되다.
 	- $(번호)로 적어 파라미터를 사용할 수 있다.
@@ -85,18 +88,20 @@
 ### Type
 - 명령어의 type들을 알 수 있다.
 - 명령어의 context까지 확인할 수 있다.
+
 ### Background Job
 - touch : 파일을 새로 만드는 명령어
-- &는 부모 프로세스가 기다리고 있지 않고 다른 다른 잡을 명시하게 된다.
-- and를 주면 배그라운드 프로세스에 대해 처리할 수 이세
+- &는 부모 프로세스가 기다리고 있지 않고 다른 잡을 명시하게 된다.
+- and를 주면 배그라운드 프로세스에 대해 처리할 수 있다.
+
 #### Job Control
 - suspend : 잡을 중단시키고, 이를 제어하여 새로 실행시키는 것
 
 
 ## Linux Command Lookup
 	
-
 ## Command List and Conditional Command List
+
 ### Command List
 - ; / & 를 통해 연결시킬 수 있다.
 	- 단순한 연결은 영향을 미치지 않고, sequential하게 실행하기만 한다.
