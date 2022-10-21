@@ -97,7 +97,6 @@
 #### Job Control
 - suspend : 잡을 중단시키고, 이를 제어하여 새로 실행시키는 것
 
-
 ## Linux Command Lookup
 	
 ## Command List and Conditional Command List
